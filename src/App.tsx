@@ -86,6 +86,9 @@ function App() {
                 </button>
               </div>
               <p style={{ textAlign: "center" }}>SUCCESS MODAL</p>
+              <div style={{ margin: "auto" }}>
+                <p style={{ textAlign: "center" }}>VOTE CASTED SUCCESSFULLY</p>
+              </div>
             </ModalContent>
           </div>
         </Modal>
