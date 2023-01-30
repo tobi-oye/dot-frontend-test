@@ -37,9 +37,9 @@ const Ballot = ({
           !selected && mutatedState.some(({ selected }) => selected === true)
         }
         onClick={() => selectionHandler(id)}
-        data-button={id}
+        aria-label={`select-${id}`}
       >
-        Select Button
+        {selected ? "Unselect Button" : "Select Button"}
       </Button>
     </Container>
   );
@@ -118,7 +118,7 @@ const Button = styled.button`
     background-color: #fafbfc;
     border-color: rgba(27, 31, 35, 0.15);
     color: #959da5;
-    cursor: default;
+    cursor: no-drop;
   }
 
   &:active {
