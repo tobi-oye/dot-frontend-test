@@ -19,7 +19,7 @@ export const Category = ({ id, items }: CategoryProps) => {
       return newObj;
     });
     setMutatedState(mutatedItems);
-  }, []);
+  }, [items]);
   const clickHandler = (data: mutatedObjType[]) => {
     setMutatedState(data);
   };
